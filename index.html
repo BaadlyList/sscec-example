@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SSCEC</title>
+<meta name="description" content="Replace with a short description of your business.">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="nav.css">
+<script src="theme.js" defer></script>
+<script src="nav.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a href="index.html" class="logo">SSCEC</a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
+    <nav class="main-nav" aria-label="Main">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li class="has-sub">
+          <a href="#" aria-haspopup="true" aria-expanded="false">About</a>
+          <ul class="sub">
+            <li><a href="../assets/page/about-us">About us</a></li>
+            <li><a href="../assets/page/founder">Founder</a></li>
+            <li><a href="#">Certifications</a></li>
+            <li><a href="#">Infrastructure</a></li>
+          </ul>
+        </li>
+        <li class="has-sub">
+          <a href="#" aria-haspopup="true" aria-expanded="false">Services</a>
+          <ul class="sub">
+            <li><a href="#">Field Related activities</a></li>
+            <li><a href="#">Laboratory / Office Related Activities</a></li>
+          </ul>
+        </li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li class="has-sub end">
+          <a href="#" aria-haspopup="true" aria-expanded="false">Careers</a>
+          <ul class="sub">
+            <li><a href="#">Current openings</a></li>
+            <li><a href="#">Upload resume</a></li>
+          </ul>
+        </li>
+        <li class="has-sub end">
+          <a href="#contact" aria-haspopup="true" aria-expanded="false">Contact</a>
+          <ul class="sub">
+            <li><a href="#contact">Contact form</a></li>
+          </ul>
+        </li>
+        <li><button id="theme-toggle" class="theme-btn" aria-label="Toggle dark mode">Dark</button></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" id="hero">
+  <div class="slides">
+    <div class="slide active"><h1>Creativity Without Limits</h1></div>
+    <div class="slide"><h1>From Concept to Completion</h1></div>
+    <div class="slide"><h1>Committed to Quality</h1></div>
+    <div class="slide"><h1>Your Vision, Our Mission</h1></div>
+  </div>
+  <button class="arrow prev" aria-label="Previous">&#10094;</button>
+  <button class="arrow next" aria-label="Next">&#10095;</button>
+  <div class="dots"></div>
+</section>
+
+<section class="section" id="sectors">
+  <div class="container">
+    <h2 class="section-title">Core Sectors</h2>
+    <div class="card-grid" id="sector-grid"></div>
+  </div>
+</section>
+
+<section class="section alt" id="why">
+  <div class="container two-col">
+    <div>
+      <h2 class="section-title left">Why Choose Us?</h2>
+      <p>Write your promise to clients here: timely delivery, quality, and trust.</p>
+      <p>Mention certifications, awards or standards your company follows.</p>
+      <p>Add a line about your values, community work or team development.</p>
+      <a href="#contact" class="btn">Contact us</a>
+    </div>
+    <div>
+      <h2 class="section-title left">Recent Projects</h2>
+      <ul class="project-list" id="project-list"></ul>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="clients">
+  <div class="container">
+    <h2 class="section-title">Clients</h2>
+    <ul class="chips" id="client-list"></ul>
+  </div>
+</section>
+
+<section class="section alt" id="contact">
+  <div class="container two-col">
+    <div>
+      <h2 class="section-title left">Branches</h2>
+      <div class="branch"><h3>Head Office</h3><p>Your address line, City, State, PIN<br>hello@example.com<br>+00 000 000 0000</p></div>
+      <div class="branch"><h3>Regional Office</h3><p>Your address line, City, State, PIN<br>office@example.com<br>+00 000 000 0000</p></div>
+    </div>
+    <div>
+      <h2 class="section-title left">Contact Form</h2>
+      <form id="contact-form" novalidate>
+        <label>Name<input type="text" name="name" maxlength="200" required></label>
+        <label>Email<input type="email" name="email" maxlength="200" required></label>
+        <label>Message<textarea name="message" rows="5" maxlength="5000" required></textarea></label>
+        <!-- spam trap: real people never see or fill this -->
+        <div class="hp" aria-hidden="true"><label>Website<input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
+        <button type="submit" class="btn">Send</button>
+        <p id="form-status" role="status"></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container foot-wrap">
+    <p>&copy; <span id="year"></span> SSCEC. All rights reserved.</p>
+  </div>
+</footer>
+<button id="to-top" aria-label="Scroll to top">&#8679;</button>
+</body>
+</html>
